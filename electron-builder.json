@@ -1,0 +1,23 @@
+{
+  "appId": "com.angga.gate",
+  "files": ["_dist"],
+  "extraResources": ["_dist/src/preload", "_dist/renderer"],
+  "icon": "./desktopIcon.png",
+  "extraFiles": [
+    {
+      "from": "_dist/src/console",
+      "to": "console",
+      "filter": ["**/*"]
+    }
+  ],
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  },
+  "win": {
+    "target": ["portable", "msi"]
+  }
+}

@@ -8,6 +8,10 @@ import {
   MantineProvider,
 } from '@mantine/core';
 import { screenFit } from './helper/screen';
+// Import specific font weights
+import '@fontsource/plus-jakarta-sans/400.css';
+import '@fontsource/plus-jakarta-sans/500.css';
+import '@fontsource/plus-jakarta-sans/700.css';
 
 interface DefaultColor {
   [x: string & {}]: MantineColorsTuple;
@@ -47,10 +51,12 @@ const theme = createTheme({
     default: screenFit(12),
   },
   defaultRadius: 'default',
+  fontFamily: 'Plus Jakarta Sans, sans-serif',
+  headings: { fontFamily: 'Plus Jakarta Sans, sans-serif' },
 });
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <MantineProvider theme={theme}>
+  <MantineProvider withGlobalClasses theme={theme}>
     <App />
   </MantineProvider>
 );

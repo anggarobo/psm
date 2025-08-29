@@ -7,8 +7,8 @@ import {
   TextInput,
   Title,
 } from '@mantine/core';
-import Layout from '../../components/Layout';
-import { screenFit } from '../../helper/screen';
+import Layout from '../components/Layout';
+import { screenFit } from '../helper/screen';
 
 export default function Login() {
   return (

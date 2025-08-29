@@ -1,4 +1,4 @@
-import OpenShift from './pages/Shift/Open';
+import Dashboard from './pages/Dashboard';
 
 export default function App() {
   // const [platform, setPlatform] = React.useState('');
@@ -14,7 +14,7 @@ export default function App() {
   return (
     <>
       {/* <SerialPort /> */}
-      <OpenShift />
+      <Dashboard />
     </>
   );
 }
